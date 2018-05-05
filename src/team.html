@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lemon|Luckiest+Guy" rel="stylesheet">
+  <script type="text/javascript" src="js/team.js"></script>
+  <link rel="stylesheet" href="css/team.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark">
+    <div class="nemesis-logo" id="logo">
+      <h3 class="nemesis-text">N3M3SiS</h3>
+    </div>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="standings.html">Standings</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Matches</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">FIFA World Cup 2018</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="loader">
+    <i class="fas fa-futbol fa-spin"></i>
+  </div>
+  <div class="container">
+    <div class="sidebar">
+      <div class="team-name"></div>
+      <ul class="ul-list">
+        <li class="list-item" id="basic">Basic</li>
+        <li class="list-item" id="squad">Squad</li>
+        <li class="list-item" id="transfers">Transfers</li>
+        <li class="list-item" id="stats">Statistics</li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="basic-div">
+        <table class="table">
+          <tbody class="basic-table-body"></tbody>
+        </table>
+      </div>
+      <div class="squad-div">
+        <table class="table">
+          <thead>
+            <th>Goalkeepers</th>
+            <th>Defenders</th>
+            <th>Mid-fielders</th>
+            <th>Attackers</th>
+          </thead>
+          <tbody>
+            <td><ul id="gk-ul"></ul></td>
+            <td><ul id="def-ul"></ul></td>
+            <td><ul id="mid-ul"></ul></td>
+            <td><ul id="att-ul"></ul></td>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.loader {
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  font-size: 400px;
+  text-align: center;
+}
+
+.competitions-div {
+  margin: 10px 0px;
+}
+
+.nemesis-text {
+  font-family: 'Luckiest Guy', cursive;
+  color: white;
+}
+
+.nav-link {
+  color: green;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 20px;
+}
+
+.nav-link:hover {
+  color: white;
+  background-color: green;
+  border-radius: 20px;
+}
+
+.navbar-nav {
+  margin: 0px 10px;
+}
+
+.nav-item {
+  margin: 0px 10px;
+}
+
+#logo {
+  cursor: pointer;
+}
