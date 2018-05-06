@@ -61,19 +61,19 @@ $(document).ready(function() {
     for (var i = 0; i < _squad.length; i++) {
       switch (_squad[i].position) {
         case "G":
-          var li = $('<li/>').html(_squad[i].name);
+          var li = $('<li/>').html(_squad[i].name + ' (' + _squad[i].number + ')');
           $('#gk-ul').append(li);
           break;
         case "D":
-          var li = $('<li/>').html(_squad[i].name);
+          var li = $('<li/>').html(_squad[i].name + ' (' + _squad[i].number + ')');
           $('#def-ul').append(li);
           break;
         case "M":
-          var li = $('<li/>').html(_squad[i].name);
+          var li = $('<li/>').html(_squad[i].name + ' (' + _squad[i].number + ')');
           $('#mid-ul').append(li);
           break;
         case "A":
-          var li = $('<li/>').html(_squad[i].name);
+          var li = $('<li/>').html(_squad[i].name + ' (' + _squad[i].number + ')');
           $('#att-ul').append(li);
           break;
       }

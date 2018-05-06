@@ -1,4 +1,4 @@
-body {
+body, html {
   height: 100%;
   width: 100%;
   position: relative;
@@ -43,4 +43,28 @@ body {
 
 #logo {
   cursor: pointer;
+}
+
+.container {
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.sidebar {
+  min-height: 100%;
+  width: 30%;
+  background-color: greenyellow;
+  position: absolute;
+  background: linear-gradient(to right, greenyellow, white);
+  left: 0;
+  padding: 10px;
+}
+
+.standings-table {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 70%;
+  padding: 10px
 }

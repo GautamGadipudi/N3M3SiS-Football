@@ -1,4 +1,5 @@
 var cups = ['UEFA Champions League', 'UEFA Europa League', 'Fa Cup', 'EFL Cup', 'Copa Del Rey']
+
 $(document).ready(function() {
   $('.loader').css('visibility', 'hidden');
 
@@ -25,7 +26,6 @@ $(document).ready(function() {
         }
         getStandings();
       }
-
     },
     error: function(r) {
       console.error(r);

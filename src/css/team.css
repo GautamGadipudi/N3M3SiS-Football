@@ -54,7 +54,7 @@ body, html {
   width: 30%;
   background-color: greenyellow;
   position: absolute;
-  background: linear-gradient(to right, greenyellow 40%, #3A3A3A);
+  background: linear-gradient(to right, greenyellow, white);
 }
 
 ul {
@@ -75,7 +75,7 @@ ul {
 .list-item:hover {
   background-color: #3A3A3A;
   color: greenyellow;
-  background: linear-gradient(to right, #3A3A3A 90%,  greenyellow)
+  background: linear-gradient(to right, #3A3A3A,  white)
 }
 
 .team-name {
@@ -107,4 +107,12 @@ ul {
 
 .transfers {
   margin-bottom: 20px;
+}
+
+.transfers-out-th {
+  background-color: red;
+}
+
+.transfers-in-th {
+  background-color: green;
 }
