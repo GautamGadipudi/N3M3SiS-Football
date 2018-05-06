@@ -4,14 +4,14 @@
 }
 
 .nav-link {
-  color: green;
+  color: greenyellow;
   font-family: 'Luckiest Guy', cursive;
   font-size: 20px;
 }
 
 .nav-link:hover {
-  color: white;
-  background-color: green;
+  color: black;
+  background-color: greenyellow;
   border-radius: 20px;
 }
 

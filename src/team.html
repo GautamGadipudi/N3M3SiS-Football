@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title></title>
+  <link rel="icon" href="Content/NemesisIcon400.png" type="image/png">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
@@ -20,7 +21,7 @@
     </div>
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="standings.html">Standings</a>
+        <a class="nav-link" href="standings.html">League Standings</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Matches</a>
@@ -44,13 +45,13 @@
       </ul>
     </div>
     <div class="content">
-      <div class="basic-div">
+      <div class="basic-div content-item">
         <table class="table">
           <tbody class="basic-table-body"></tbody>
         </table>
       </div>
-      <div class="squad-div">
-        <table class="table">
+      <div class="squad-div content-item">
+        <table class="table table-condensed">
           <thead>
             <th>Goalkeepers</th>
             <th>Defenders</th>
@@ -64,6 +65,36 @@
             <td><ul id="att-ul"></ul></td>
           </tbody>
         </table>
+      </div>
+      <div class="transfers-div content-item">
+        <div class="transfers-in-div transfers">
+          <h4 style="text-align: center;"><i class="fa fa-angle-double-down"></i> Transfers-In</h4>
+          <table class="table table-condensed table-hover">
+            <thead>
+              <th>Name</th>
+              <th>From Team</th>
+              <th>Join date</th>
+              <th>Transfer details</th>
+            </thead>
+            <tbody id="transfers-in-table-body">
+
+            </tbody>
+          </table>
+        </div>
+        <div class="transfers-out-div transfers">
+          <h4 style="text-align: center;"><i class="fa fa-angle-double-up"></i> Transfers-Out</h4>
+          <table class="table">
+            <thead>
+              <th>Name</th>
+              <th>To Team</th>
+              <th>Leave date</th>
+              <th>Transfer details</th>
+            </thead>
+            <tbody id="transfers-out-table-body">
+
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </div>
